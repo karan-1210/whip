@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,50 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="012c1f4096bd831c643faade7115d013" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-g6-XpR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-asset" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-vK-UJG">
+                                <rect key="frame" x="10" y="250" width="355" height="167"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKi-kj-zMp">
+                                <rect key="frame" x="10" y="200" width="355" height="267"/>
+                                <connections>
+                                    <action selector="whipSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVR-X2-Afv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LEW-g6-XpR" secondAttribute="bottom" id="2Rw-Nf-0hw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEW-g6-XpR" secondAttribute="trailing" id="9Ea-B1-RQB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OKi-kj-zMp" secondAttribute="trailing" constant="10" id="Cmc-mU-wAS"/>
+                            <constraint firstItem="OKi-kj-zMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="G7e-sY-Kkx"/>
+                            <constraint firstItem="OKi-kj-zMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I1V-U7-dOU"/>
+                            <constraint firstItem="OKi-kj-zMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="IFj-ba-xUd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OKi-kj-zMp" secondAttribute="bottom" constant="200" id="QrA-1N-xUd"/>
+                            <constraint firstItem="tl9-vK-UJG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TDQ-9g-aoZ"/>
+                            <constraint firstItem="LEW-g6-XpR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ahh-2s-Axe"/>
+                            <constraint firstItem="tl9-vK-UJG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="atc-Ex-VCO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tl9-vK-UJG" secondAttribute="bottom" constant="250" id="kTa-kd-EGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tl9-vK-UJG" secondAttribute="trailing" constant="10" id="rm2-4o-QYj"/>
+                            <constraint firstItem="LEW-g6-XpR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yFt-bl-A9V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="012c1f4096bd831c643faade7115d013" width="1080" height="1920"/>
+        <image name="image-asset" width="583" height="422"/>
+    </resources>
 </document>
